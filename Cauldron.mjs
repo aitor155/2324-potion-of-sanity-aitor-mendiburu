@@ -19,8 +19,8 @@ export default class Cauldron {
         } else {
             return Potion.with(
                 common_effects[0],
-                ingredient1.weight + ingredient2.weight,
-                ingredient1.value + ingredient2.value
+                Math.floor(ingredient1.weight + ingredient2.weight),
+                Math.floor(ingredient1.value + ingredient2.value)
             );
         }
     }
